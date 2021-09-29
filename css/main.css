@@ -578,3 +578,22 @@
     .footer-nav-links ul > li > a:hover{
         text-decoration: underline;
     }
+
+/*breakpoints*/
+
+    /*@media (min-width: 0px){*/
+
+    /*    body {*/
+    /*        background-color: red;*/
+    /*    }*/
+
+    /*}*/
+
+    /*@media (min-width: 400px){*/
+
+    /*    body {*/
+    /*        background-color: green;*/
+    /*    }*/
+
+    /*}*/
+
