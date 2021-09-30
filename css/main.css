@@ -20,6 +20,10 @@
     border: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* container */
 
     .container {
@@ -215,7 +219,7 @@
 
     #UI-State-Image-Feature {
         max-width: 1440px;
-        height: 740px;
+        min-height: 740px;
         margin-left: auto;
         margin-right: auto;
         display: flex;
@@ -231,6 +235,9 @@
         flex-direction: column;
         align-items: center;
         padding-top: 120px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .UI-State-Image-Feature-item h2 {
@@ -452,6 +459,8 @@
         flex-direction: row;
         align-items: stretch;
         justify-content: space-between;
+        flex-wrap: wrap;
+
     }
 
     .testimoni-content .sm-cards {
@@ -461,7 +470,11 @@
         border-radius: 10px;
         padding: 30px;
         transition: box-shadow 0.2s ease;
+        flex: 1 auto;
+        margin-right: 25px;
+        margin-bottom: 25px;
     }
+
 
     .testimoni-content .sm-cards:nth-of-type(1){
         box-shadow: 6px 8px 20px rgba(0, 0, 0, 0.05);
@@ -515,6 +528,7 @@
         margin-left: auto;
         margin-right: auto;
         display: flex;
+        flex-wrap: wrap;
     }
 
     .footer-about-company {
@@ -548,6 +562,7 @@
     .footer-nav-links {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .footer-nav-links ul {
@@ -579,21 +594,135 @@
         text-decoration: underline;
     }
 
-/*breakpoints*/
 
-    /*@media (min-width: 0px){*/
+    @media screen and (min-width: 0) and (max-width: 400px) {
 
-    /*    body {*/
-    /*        background-color: red;*/
-    /*    }*/
+        section {
+            padding: 0 3%;
+        }
 
-    /*}*/
+        .landing-navigation {
+            display: none;
+        }
 
-    /*@media (min-width: 400px){*/
+        #UI-State-Image-Feature {
+            flex-direction: column;
+        }
 
-    /*    body {*/
-    /*        background-color: green;*/
-    /*    }*/
+        #UI-State-Image-Feature > div {
+            width: 100%;
+            margin-bottom: 25px;
+        }
 
-    /*}*/
+        .benefit-content {
+            flex-direction: column;
+        }
 
+        .benefit-description {
+            margin-left: 0;
+            margin-bottom: 50px;
+            order: 1;
+        }
+
+        .benefit-image {
+            order: 2;
+        }
+
+        .product-slider {
+            margin-left: 0;
+            margin-top: 50px;
+        }
+
+        .footer-about-company {
+            margin-bottom: 50px;
+        }
+
+    }
+
+    @media screen and (min-width: 401px) and (max-width: 800px) {
+
+        section {
+            padding: 0 5%;
+        }
+
+        .landing-navigation {
+            display: none;
+        }
+
+        #UI-State-Image-Feature {
+            flex-direction: column;
+        }
+
+        #UI-State-Image-Feature > div {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+
+        .benefit-content {
+            flex-direction: column;
+        }
+
+        .benefit-description {
+            margin-left: 0;
+            margin-bottom: 50px;
+            order: 1;
+        }
+
+        .benefit-image {
+            order: 2;
+        }
+
+        .product-slider {
+            margin-left: 0;
+            margin-top: 50px;
+        }
+
+        .footer-about-company {
+            margin-bottom: 50px;
+        }
+
+    }
+
+    @media screen and (min-width: 801px) and (max-width: 1200px) {
+
+        section {
+            padding: 0 5%;
+        }
+
+        .landing-navigation {
+            display: none;
+        }
+
+        #UI-State-Image-Feature {
+            flex-direction: column;
+        }
+
+        #UI-State-Image-Feature > div {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+
+        .benefit-content {
+            flex-direction: column;
+        }
+
+        .benefit-description {
+            margin-left: 0;
+            margin-bottom: 50px;
+            order: 1;
+        }
+
+        .benefit-image {
+            order: 2;
+        }
+
+        .product-slider {
+            margin-left: 0;
+            margin-top: 50px;
+        }
+
+    }
+
+    @media screen and (min-width: 1201px) and (max-width: 1600px) {
+
+    }
